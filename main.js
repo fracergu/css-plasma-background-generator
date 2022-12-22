@@ -43,6 +43,9 @@ function handleEventListenersForGradient(n) {
     .addEventListener('input', (e) => {
       const opacity = e.target.value;
       gradient.style.opacity = opacity;
+      document.getElementById(
+        `opacity-label-${n}`,
+      ).innerText = `Opacity: ${opacity}`;
     });
   document
     .getElementById(`duration-slider-${n}`)
