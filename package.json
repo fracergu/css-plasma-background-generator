@@ -1,0 +1,17 @@
+{
+  "name": "plasma-css",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

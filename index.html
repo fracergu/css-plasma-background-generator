@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.scss" />
+    <title>CSS Plasma Background Generator</title>
+  </head>
+  <body>
+    <div class="controls">
+      <div class="menu" id="menu">
+        <!-- Global settings -->
+        <div class="control-wrapper">
+          <div class="control">
+            <h1>Global</h1>
+            <label for="blur-slider" id="blur-label">Blur 150px</label>
+            <input
+              id="blur-slider"
+              type="range"
+              min="100"
+              max="300"
+              value="150"
+            />
+            <label for="opacity-slider" id="opacity-label">Opacity 0.6</label>
+            <input
+              id="opacity-slider"
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.6"
+            />
+            <label for="duration-slider" id="duration-label"
+              >Duration 11s</label
+            >
+            <input
+              id="duration-slider"
+              type="range"
+              min="1"
+              max="25"
+              value="11"
+            />
+          </div>
+          <!-- Gradient 1 settings -->
+          <div class="control">
+            <h1>Gradient 1</h1>
+            <label for="color-picker-1" id="color-label-1">Color #ff0000</label>
+            <input type="color" id="color-picker-1" value="#ff0000" />
+            <label for="opacity-slider-1" id="opacity-label-1"
+              >Opacity 0.6</label
+            >
+            <input
+              id="opacity-slider-1"
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.6"
+            />
+            <label for="duration-slider-1" id="duration-label-1"
+              >Duration 11s</label
+            >
+            <input
+              id="duration-slider-1"
+              type="range"
+              min="1"
+              max="25"
+              value="11"
+            />
+          </div>
+          <!-- Gradient 2 settings -->
+          <div class="control">
+            <h1>Gradient 2</h1>
+            <label for="color-picker-2" id="color-label-2">Color #00ff00</label>
+            <input type="color" id="color-picker-2" value="#00ff00" />
+            <label for="opacity-slider-2" id="opacity-label-2"
+              >Opacity 0.6</label
+            >
+            <input
+              id="opacity-slider-2"
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.6"
+            />
+            <label for="duration-slider-2" id="duration-label-2"
+              >Duration 11s</label
+            >
+            <input
+              id="duration-slider-2"
+              type="range"
+              min="5"
+              max="25"
+              value="11"
+            />
+          </div>
+          <!-- Gradient 3 settings -->
+          <div class="control">
+            <h1>Gradient 3</h1>
+            <label for="color-picker-3" id="color-label-3">Color #0000ff</label>
+            <input type="color" id="color-picker-3" value="#0000ff" />
+            <label for="opacity-slider-3" id="opacity-label-3"
+              >Opacity 0.6</label
+            >
+            <input
+              id="opacity-slider-3"
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.6"
+            />
+            <label for="duration-slider-3" id="duration-label-3"
+              >Duration 11s</label
+            >
+            <input
+              id="duration-slider-3"
+              type="range"
+              min="1"
+              max="25"
+              value="11"
+            />
+          </div>
+          <!-- Buttons -->
+          <div class="control">
+            <button id="randomize-colors">Randomize colors</button>
+            <button id="copy-code">Copy code</button>
+            <button id="github-button">
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  line-height: 22px;
+                "
+              >
+                <img
+                  src="assets/github.svg"
+                  alt="Github"
+                  width="22"
+                  height="22"
+                  style="width: fit-content; margin-right: 5px"
+                />
+                Github
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Backgound -->
+    <div class="container">
+      <div class="wrapper" id="wrapper" role="region">
+        <div class="gradient gradient_1" id="gradient-1"></div>
+        <div class="gradient gradient_2" id="gradient-2"></div>
+        <div class="gradient gradient_3" id="gradient-3"></div>
+      </div>
+    </div>
+    <!-- Hide menu button -->
+    <button id="hide-button">
+      <img src="assets/eye.svg" alt="Hide menu" width="32px" height="32px" />
+    </button>
+    <script src="/main.js"></script>
+  </body>
+</html>
