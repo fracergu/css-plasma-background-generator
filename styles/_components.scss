@@ -82,7 +82,7 @@
   transition: all 0.5s ease;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);
-  &_1 {
+  &-1 {
     width: 700px;
     height: 700px;
     background: #ff0000;
@@ -96,7 +96,7 @@
       height: 80%;
     }
   }
-  &_2 {
+  &-2 {
     width: 600px;
     height: 600px;
     background: #00ff00;
@@ -111,7 +111,7 @@
       height: 75%;
     }
   }
-  &_3 {
+  &-3 {
     width: 500px;
     height: 500px;
     background: #0000ff;
