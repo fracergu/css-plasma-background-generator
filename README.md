@@ -13,4 +13,5 @@ Just tweak the settings and push the copy button. It will generate a HTML code w
 You can use it here: https://fracergu.github.io/css-plasma-background-generator/
 
 ---
-![ Preview of the website ](/preview.png "Preview of the website")
+
+![ Preview of the website ](/preview.png 'Preview of the website')
